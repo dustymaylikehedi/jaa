@@ -12,6 +12,18 @@ h1, h2, h3, h4, h5, h6, .menu {
 	font-weight: 400 !important;
 }
 
+h1 {
+	font-size: 1.8em !important;
+}
+
+h2 {
+	font-size: 1.5em !important;
+}
+
+.right.menu.static {
+	font-size: 1.2em;
+}
+
 .title {
 	font-family: 'Roboto Mono', monospace !important;
 	font-weight: 700 !important;
@@ -19,14 +31,6 @@ h1, h2, h3, h4, h5, h6, .menu {
 
 .step .title {
 	font-weight: 400 !important;
-}
-
-h1 {
-	font-size: 1.8em !important;
-}
-
-h2 {
-	font-size: 1.5em !important;
 }
 
 .ui[class*="very padded"].neg.segment {
@@ -49,7 +53,7 @@ h2 {
 
 .rotate {
 	color: #2196F3;
-	font-family: 'Noto Serif', monospace;
+	font-family: 'Noto Serif', serif;
 	margin: .5em 0 0;
 }
 
@@ -65,10 +69,26 @@ h2 {
 	color: #f1f1f1;
 }
 
-.aja-blue {
-	color: #2196F3 !important;
+.ui.card>.content>.header {
+	font-family: 'Noto Serif', serif !important;
+}
+
+.ui.card {
+	& .aja-blue {
+		color: #19191F !important;
+		& .icon {
+			transition: color .2s ease-in-out;
+		}
+	}
+	&:hover .aja-blue .icon {
+		color: #2196F3 !important;
+	}
 }
 
 .ui.item {
 	border-left: none !important;
+}
+
+#sticker p {
+	line-height: 1.75em !important;
 }

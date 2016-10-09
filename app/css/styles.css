@@ -8,18 +8,21 @@ h1, h2, h3, h4, h5, h6, .menu {
   font-family: 'Noto Serif', monospace !important;
   font-weight: 400 !important; }
 
+h1 {
+  font-size: 1.8em !important; }
+
+h2 {
+  font-size: 1.5em !important; }
+
+.right.menu.static {
+  font-size: 1.2em; }
+
 .title {
   font-family: 'Roboto Mono', monospace !important;
   font-weight: 700 !important; }
 
 .step .title {
   font-weight: 400 !important; }
-
-h1 {
-  font-size: 1.8em !important; }
-
-h2 {
-  font-size: 1.5em !important; }
 
 .ui[class*="very padded"].neg.segment {
   background: #19191F;
@@ -38,7 +41,7 @@ h2 {
 
 .rotate {
   color: #2196F3;
-  font-family: 'Noto Serif', monospace;
+  font-family: 'Noto Serif', serif;
   margin: .5em 0 0; }
 
 .aja {
@@ -50,8 +53,19 @@ h2 {
 .neg .ui.header {
   color: #f1f1f1; }
 
-.aja-blue {
+.ui.card > .content > .header {
+  font-family: 'Noto Serif', serif !important; }
+
+.ui.card .aja-blue {
+  color: #19191F !important; }
+  .ui.card .aja-blue .icon {
+    transition: color .2s ease-in-out; }
+
+.ui.card:hover .aja-blue .icon {
   color: #2196F3 !important; }
 
 .ui.item {
   border-left: none !important; }
+
+#sticker p {
+  line-height: 1.75em !important; }
